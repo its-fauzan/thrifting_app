@@ -262,7 +262,7 @@ class _WithdrawPageState extends State<WithdrawPage> {
           ),
           const SizedBox(height: 8),
           const Text(
-            'Penarikan bersifat simulasi (tidak ada uang sungguhan).',
+            'Pastikan rekening tujuan sudah benar.',
             textAlign: TextAlign.center,
             style: TextStyle(color: Colors.grey, fontSize: 12),
           ),
