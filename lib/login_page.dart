@@ -1,13 +1,3 @@
-// ============================================================
-// login_page.dart  -  Halaman masuk
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - StatefulWidget + setState (halaman yang isinya bisa berubah)
-//  - Form, TextFormField, validator
-//  - TextEditingController (membaca isi kolom teks)
-//  - Navigator.pushReplacement (pindah halaman tanpa bisa kembali)
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'data_store.dart';
@@ -70,7 +60,7 @@ class _LoginPageState extends State<LoginPage> {
                     style: TextStyle(fontSize: 28, fontWeight: FontWeight.bold),
                   ),
                   const SizedBox(height: 4),
-                  const Text('Jual beli barang thrift'),
+                  const Text('Jual beli barang thrifting'),
                   const SizedBox(height: 32),
                   TextFormField(
                     controller: _emailCtrl,
@@ -127,11 +117,6 @@ class _LoginPageState extends State<LoginPage> {
                     child: const Text('Belum punya akun? Daftar'),
                   ),
                   const SizedBox(height: 8),
-                  const Text(
-                    'Akun demo: rina@mail.com / dimas@mail.com / salsa@mail.com\nPassword: 123456',
-                    textAlign: TextAlign.center,
-                    style: TextStyle(color: Colors.grey, fontSize: 12),
-                  ),
                 ],
               ),
             ),

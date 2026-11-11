@@ -1,13 +1,3 @@
-// ============================================================
-// checkout_page.dart  -  Checkout: kurir / COD, alamat, pembayaran
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - SegmentedButton (pilih salah satu dari dua jalur)
-//  - ChoiceChip untuk memilih kurir dan metode bayar
-//  - tampilan yang berubah sesuai pilihan (if di dalam children)
-//  - validasi manual sebelum membuat pesanan
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'address_page.dart';
@@ -242,7 +232,8 @@ class _CheckoutPageState extends State<CheckoutPage> {
                         ),
                       Text(
                         'Penjual: ${seller.name}',
-                        style: const TextStyle(color: Colors.grey, fontSize: 12),
+                        style:
+                            const TextStyle(color: Colors.grey, fontSize: 12),
                       ),
                     ],
                   ),

@@ -1,11 +1,3 @@
-// ============================================================
-// register_page.dart  -  Halaman daftar akun baru
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - validasi form (cek password sama, panjang minimal)
-//  - Navigator.pushAndRemoveUntil (hapus semua halaman sebelumnya)
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'data_store.dart';
@@ -38,8 +30,7 @@ class _RegisterPageState extends State<RegisterPage> {
   void _register() {
     if (!_formKey.currentState!.validate()) return;
 
-    final error =
-        registerUser(_nameCtrl.text, _emailCtrl.text, _passCtrl.text);
+    final error = registerUser(_nameCtrl.text, _emailCtrl.text, _passCtrl.text);
     if (error != null) {
       setState(() => _error = error);
       return;
@@ -65,9 +56,8 @@ class _RegisterPageState extends State<RegisterPage> {
               TextFormField(
                 controller: _nameCtrl,
                 decoration: const InputDecoration(labelText: 'Nama lengkap'),
-                validator: (v) => (v == null || v.trim().isEmpty)
-                    ? 'Nama wajib diisi'
-                    : null,
+                validator: (v) =>
+                    (v == null || v.trim().isEmpty) ? 'Nama wajib diisi' : null,
               ),
               const SizedBox(height: 16),
               TextFormField(
@@ -93,8 +83,7 @@ class _RegisterPageState extends State<RegisterPage> {
               TextFormField(
                 controller: _confirmCtrl,
                 obscureText: true,
-                decoration:
-                    const InputDecoration(labelText: 'Ulangi password'),
+                decoration: const InputDecoration(labelText: 'Ulangi password'),
                 validator: (v) =>
                     v != _passCtrl.text ? 'Password tidak sama' : null,
               ),

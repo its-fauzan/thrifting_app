@@ -1,13 +1,3 @@
-// ============================================================
-// chat_page.dart  -  Ruang chat dengan satu user
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - ListView.builder untuk daftar pesan
-//  - Align + Container untuk gelembung chat kiri/kanan
-//  - ScrollController agar otomatis scroll ke pesan terbaru
-//  - addPostFrameCallback (menjalankan sesuatu setelah layar tergambar)
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'data_store.dart';

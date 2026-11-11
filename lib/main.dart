@@ -1,12 +1,3 @@
-// ============================================================
-// main.dart  -  Titik awal aplikasi
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - fungsi main() dan runApp()
-//  - MaterialApp, tema terang & gelap (ThemeData)
-//  - StatelessWidget
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'data_store.dart';

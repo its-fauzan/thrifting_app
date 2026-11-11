@@ -1,12 +1,3 @@
-// ============================================================
-// shop_page.dart  -  Lapak (etalase) milik seorang user
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - menyusun halaman dari beberapa bagian (header, statistik, grid)
-//  - GridView di dalam ListView (shrinkWrap)
-//  - tombol Ikuti / Berhenti mengikuti
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'chat_page.dart';
@@ -113,7 +104,8 @@ class _ShopPageState extends State<ShopPage> {
                   _stat('${items.length}', 'Barang'),
                   _stat('${followersOf(user.id)}', 'Pengikut'),
                   _stat('${completedSalesCount(user.id)}', 'Pesanan\nselesai'),
-                  _stat('${sellerCancelPercent(user.id)}%', 'Batal oleh\npenjual'),
+                  _stat('${sellerCancelPercent(user.id)}%',
+                      'Batal oleh\npenjual'),
                 ],
               ),
             ),

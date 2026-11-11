@@ -1,12 +1,3 @@
-// ============================================================
-// helpers.dart  -  Fungsi & widget kecil yang dipakai banyak halaman
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - fungsi biasa (format uang, tanggal)
-//  - dialog (AlertDialog) dan SnackBar
-//  - membuat widget sendiri (ProductImage, EmptyState)
-// ============================================================
-
 import 'dart:io';
 
 import 'package:flutter/foundation.dart' show kIsWeb;

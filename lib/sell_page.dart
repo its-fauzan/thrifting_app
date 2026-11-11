@@ -1,13 +1,3 @@
-// ============================================================
-// sell_page.dart  -  Form tambah / edit barang
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - Form dengan banyak jenis isian (teks, angka, dropdown)
-//  - DropdownButtonFormField
-//  - mengambil foto dengan image_picker (galeri / kamera)
-//  - satu halaman untuk dua keperluan: tambah baru & edit
-// ============================================================
-
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
 

@@ -1,15 +1,3 @@
-// ============================================================
-// data_store.dart  -  Pusat data & logika aplikasi
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - variabel global (List) sebagai "database" sederhana di memori
-//  - fungsi biasa untuk logika (login, checkout, saldo, chat, dll.)
-//  - ValueNotifier: pemberi kabar "data berubah" ke widget
-//
-// CATATAN: data hanya ada di memori. Saat aplikasi ditutup,
-// data kembali ke data contoh (loadSeedData) di bagian bawah.
-// ============================================================
-
 import 'dart:math';
 
 import 'package:flutter/foundation.dart';
@@ -466,7 +454,8 @@ void packOrder(Order order) {
 }
 
 void shipOrder(Order order) {
-  order.resi = '${order.courier.split(' ').first.toUpperCase()}${_randomDigits(10)}';
+  order.resi =
+      '${order.courier.split(' ').first.toUpperCase()}${_randomDigits(10)}';
   order.status = OrderStatus.shipped;
   notifyData();
 }
@@ -546,8 +535,8 @@ int sellerCancelPercent(String sellerId) {
   final all = orders.where((o) => o.sellerId == sellerId).toList();
   if (all.isEmpty) return 0;
   final cancelled = all
-      .where((o) =>
-          o.status == OrderStatus.cancelled && o.cancelledBy == sellerId)
+      .where(
+          (o) => o.status == OrderStatus.cancelled && o.cancelledBy == sellerId)
       .length;
   return (cancelled * 100 / all.length).round();
 }
@@ -643,11 +632,7 @@ void markConversationRead(String me, String other) {
   if (changed) notifyData();
 }
 
-// ============================================================
-// DATA CONTOH (dibuat setiap aplikasi dijalankan)
-// Akun demo: rina@mail.com, dimas@mail.com, salsa@mail.com
-// Password semuanya: 123456
-// ============================================================
+// ----------------- Akun demo dan Data Contoh ----------------
 
 void loadSeedData() {
   final now = DateTime.now();
@@ -735,6 +720,7 @@ void loadSeedData() {
       category: 'Outerwear',
       size: 'L',
       condition: 'Good',
+      imagePath: 'assets/images/denim_vintage.webp',
       createdAt: now.subtract(const Duration(days: 2)),
     ),
     Product(
@@ -746,6 +732,7 @@ void loadSeedData() {
       category: 'Atasan',
       size: 'M',
       condition: 'Like New',
+      imagePath: 'assets/images/flanel_merah.jpg',
       stock: 2,
       createdAt: now.subtract(const Duration(days: 3)),
     ),
@@ -758,6 +745,7 @@ void loadSeedData() {
       category: 'Sepatu',
       size: '42-43',
       condition: 'Ada Minus',
+      imagePath: 'assets/images/sneakers_putih.jpg',
       conditionNote: 'Sol sedikit menguning, tali sudah diganti baru.',
       createdAt: now.subtract(const Duration(days: 5)),
     ),
@@ -770,6 +758,7 @@ void loadSeedData() {
       category: 'Outerwear',
       size: 'XL',
       condition: 'Good',
+      imagePath: 'assets/images/hoodie_hitam.jpeg',
       createdAt: now.subtract(const Duration(days: 1)),
     ),
     Product(
@@ -781,6 +770,7 @@ void loadSeedData() {
       category: 'Bawahan',
       size: 'L',
       condition: 'Good',
+      imagePath: 'assets/images/cargo_army.jpg',
       stock: 3,
       createdAt: now.subtract(const Duration(days: 4)),
     ),
@@ -793,6 +783,7 @@ void loadSeedData() {
       category: 'Tas',
       size: 'All Size',
       condition: 'Like New',
+      imagePath: 'assets/images/tas_selempang.jpg',
       createdAt: now.subtract(const Duration(days: 6)),
     ),
     Product(
@@ -804,6 +795,7 @@ void loadSeedData() {
       category: 'Dress',
       size: 'M',
       condition: 'Like New',
+      imagePath: 'assets/images/dress_floral.jpg',
       createdAt: now.subtract(const Duration(days: 2)),
     ),
     Product(
@@ -815,6 +807,7 @@ void loadSeedData() {
       category: 'Atasan',
       size: 'L',
       condition: 'Ada Minus',
+      imagePath: 'assets/images/kaos_rock.jpg',
       conditionNote: 'Warna sedikit pudar di bagian kerah.',
       createdAt: now.subtract(const Duration(days: 7)),
     ),
@@ -827,6 +820,7 @@ void loadSeedData() {
       category: 'Aksesoris',
       size: 'All Size',
       condition: 'Good',
+      imagePath: 'assets/images/topi_bucket.jpg',
       createdAt: now.subtract(const Duration(days: 8)),
     ),
     Product(
@@ -838,6 +832,7 @@ void loadSeedData() {
       category: 'Bawahan',
       size: 'S',
       condition: 'Like New',
+      imagePath: 'assets/images/rok_plisket.jpg',
       createdAt: now.subtract(const Duration(days: 9)),
     ),
   ];

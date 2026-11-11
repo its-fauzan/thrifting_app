@@ -1,12 +1,3 @@
-// ============================================================
-// activity_page.dart  -  Tab "Aktivitas": tawaran & pesanan
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - DefaultTabController + TabBar + TabBarView (dua tab)
-//  - menampilkan dua jenis data dalam satu daftar
-//  - tombol yang berubah menurut status (alur tawar-menawar)
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'checkout_page.dart';
@@ -128,9 +119,8 @@ class _ActivityPageState extends State<ActivityPage> {
           ? 'Penjual membalas dengan harga lain'
           : 'Menunggu jawaban pembeli';
     } else if (o.status == OfferStatus.accepted) {
-      info = asBuyer
-          ? 'Disetujui! Silakan checkout'
-          : 'Menunggu pembeli checkout';
+      info =
+          asBuyer ? 'Disetujui! Silakan checkout' : 'Menunggu pembeli checkout';
     }
 
     return Card(

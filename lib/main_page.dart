@@ -1,12 +1,3 @@
-// ============================================================
-// main_page.dart  -  Kerangka utama dengan 5 menu di bawah
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - NavigationBar (menu bawah) + Badge (angka merah)
-//  - memilih halaman berdasarkan nomor tab (_index)
-//  - ValueListenableBuilder: menggambar ulang saat data berubah
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'activity_page.dart';

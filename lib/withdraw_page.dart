@@ -1,12 +1,3 @@
-// ============================================================
-// withdraw_page.dart  -  Tarik saldo ke rekening / e-wallet
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - memilih satu item dari daftar (rekening tujuan)
-//  - validasi berlapis: jumlah minimal, saldo cukup, password benar
-//  - menambah & menghapus data (rekening) dari sebuah list
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'data_store.dart';

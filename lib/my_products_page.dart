@@ -1,12 +1,3 @@
-// ============================================================
-// my_products_page.dart  -  Tab "Jual": barang yang saya jual
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - ListView.separated + Card + ListTile
-//  - FloatingActionButton.extended
-//  - PopupMenuButton (menu titik tiga)
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'data_store.dart';

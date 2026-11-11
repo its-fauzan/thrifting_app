@@ -1,11 +1,3 @@
-// ============================================================
-// wishlist_page.dart  -  Tab "Favorit"
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - mengubah daftar id menjadi daftar barang (map + whereType)
-//  - memakai ulang ProductCard
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'data_store.dart';
@@ -32,7 +24,8 @@ class _WishlistPageState extends State<WishlistPage> {
       body: items.isEmpty
           ? const EmptyState(
               icon: Icons.favorite_border,
-              message: 'Belum ada barang favorit.\nTekan ikon hati pada barang.',
+              message:
+                  'Belum ada barang favorit.\nTekan ikon hati pada barang.',
             )
           : GridView.builder(
               padding: const EdgeInsets.all(16),

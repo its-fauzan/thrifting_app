@@ -1,12 +1,3 @@
-// ============================================================
-// product_card.dart  -  Kartu barang (dipakai di Jelajah, Favorit, Lapak)
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - widget yang dipakai ulang di banyak halaman
-//  - Card, InkWell (bisa diklik), Stack (tumpuk widget)
-//  - callback (onChanged) agar halaman induk ikut diperbarui
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'data_store.dart';

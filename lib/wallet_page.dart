@@ -1,12 +1,3 @@
-// ============================================================
-// wallet_page.dart  -  Saldo penjual & riwayat
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - nilai yang dihitung dari data lain (saldo = masuk - tarik)
-//  - menampilkan riwayat dengan warna hijau (masuk) / merah (tarik)
-//  - konsep "saldo tertahan" (rekber / escrow) sederhana
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'data_store.dart';

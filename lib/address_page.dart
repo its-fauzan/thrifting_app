@@ -1,12 +1,3 @@
-// ============================================================
-// address_page.dart  -  Buku alamat (tambah, edit, hapus, alamat utama)
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - CRUD sederhana (Create, Read, Update, Delete)
-//  - dialog berisi form dengan Switch
-//  - memakai ulang satu dialog untuk tambah dan edit
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'data_store.dart';

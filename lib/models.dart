@@ -1,15 +1,4 @@
-// ============================================================
-// models.dart  -  "Cetakan" data aplikasi
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - class dan constructor dengan named parameter
-//  - field final (tidak bisa diganti) vs field biasa (bisa diubah)
-//  - getter (get) untuk nilai yang dihitung dari field lain
-//
-// Satu class = satu jenis data. Contoh: Product = satu barang.
-// ============================================================
-
-/// Alamat pengiriman milik user.
+// Alamat pengiriman milik user.
 class Address {
   Address({
     required this.id,

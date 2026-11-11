@@ -1,13 +1,3 @@
-// ============================================================
-// product_detail_page.dart  -  Detail barang
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - ListView berisi banyak bagian (gambar, info, penjual)
-//  - bottomNavigationBar untuk tombol Beli / Tawar
-//  - showDialog + StatefulBuilder (dialog yang punya state sendiri)
-//  - kirim data ke halaman lain lewat constructor
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'chat_page.dart';
@@ -215,7 +205,8 @@ class _ProductDetailPageState extends State<ProductDetailPage> {
                 if (seller != null)
                   Card(
                     child: ListTile(
-                      leading: CircleAvatar(child: Text(initialOf(seller.name))),
+                      leading:
+                          CircleAvatar(child: Text(initialOf(seller.name))),
                       title: Text(seller.name),
                       subtitle: Text(
                         cityOf(seller.id) ?? 'Lokasi belum diatur',

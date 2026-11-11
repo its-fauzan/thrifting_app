@@ -1,11 +1,3 @@
-// ============================================================
-// chat_list_page.dart  -  Daftar percakapan
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - ListTile dengan avatar, subtitle, dan badge belum dibaca
-//  - membuka halaman chat dengan mengirim id lawan bicara
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'chat_page.dart';

@@ -1,13 +1,3 @@
-// ============================================================
-// order_detail_page.dart  -  Detail & proses pesanan
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - menampilkan data yang sama dengan tombol berbeda untuk
-//    pembeli dan penjual (if isBuyer / isSeller)
-//  - alur status pesanan (menunggu bayar -> dibayar -> ... -> selesai)
-//  - fungsi pembantu yang mengembalikan Widget (_infoRow, _card)
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'chat_page.dart';

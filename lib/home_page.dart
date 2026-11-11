@@ -1,13 +1,3 @@
-// ============================================================
-// home_page.dart  -  Tab "Jelajah": cari & filter barang
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - AppBar, TextField untuk pencarian
-//  - ListView horizontal (deretan chip kategori)
-//  - GridView.builder (daftar barang 2 kolom)
-//  - showModalBottomSheet (panel filter dari bawah)
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'chat_list_page.dart';
@@ -239,8 +229,7 @@ class _FilterSheet extends StatefulWidget {
     String? condition,
     int? maxPrice,
     String sort,
-  )
-  onApply;
+  ) onApply;
 
   @override
   State<_FilterSheet> createState() => _FilterSheetState();

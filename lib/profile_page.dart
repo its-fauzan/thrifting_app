@@ -1,12 +1,3 @@
-// ============================================================
-// profile_page.dart  -  Tab "Profil"
-// ------------------------------------------------------------
-// YANG DIPELAJARI DI SINI:
-//  - ListTile sebagai menu
-//  - dialog edit profil dengan dua TextField
-//  - logout: kembali ke login dan hapus semua halaman
-// ============================================================
-
 import 'package:flutter/material.dart';
 
 import 'address_page.dart';
